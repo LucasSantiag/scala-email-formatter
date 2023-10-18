@@ -27,7 +27,5 @@ To run the tests, make sure you have Scala and ScalaTest installed. Then, execut
 $ sbt test
 ```
 
-The tests will validate that the TextSplitterFunctions and EmailTextUtils objects function correctly and adhere to the specified requirements.
-
 ## Todo
 - [ ] Implement Email Formatting (Using Case Classes?)
