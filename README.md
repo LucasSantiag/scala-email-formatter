@@ -13,7 +13,7 @@ The function should split the input text into lines, ensuring that no line excee
 
 ## Implementation Approaches
 ### Approach 1: Using Tail Recursion (splitWithTailRec)
-In the initial implementation, I opted for tail recursion to split the input text into lines. The splitWithTailRec function processes the text, ensuring that lines do not exceed the character limit. Words are grouped together to fit within the line length without breaking them. Tail recursion is advantageous because it optimizes memory usage by reusing the stack frame for each recursive call, leading to efficient memory management.
+In the initial implementation, I opted for tail recursion to split the input text into lines. The splitWithTailRec function processes the list of words, ensuring that lines do not exceed the character limit. Words are grouped together to fit within the line length without breaking them. Tail recursion is advantageous because it optimizes memory usage by reusing the stack frame for each recursive call, leading to efficient memory management.
 
 ### Approach 2: Using Fold Left (splitWithFoldLeft)
 In the other approach, I utilized the foldLeft higher-order function to achieve the desired formatting. The splitWithFoldLeft function iterates through the words in the input text, accumulating lines, and ensuring that no words are broken across lines, respecting the character limit per line. foldLeft is a powerful functional programming concept that simplifies code and enhances readability.
