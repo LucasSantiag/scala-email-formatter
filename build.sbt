@@ -6,3 +6,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "email-formatting"
   )
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "3.2.15" % Test,
+  "org.scalatest" %% "scalatest-funsuite" % "3.3.0-SNAP2" % Test
+)
